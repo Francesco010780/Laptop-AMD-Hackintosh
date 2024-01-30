@@ -1,5 +1,5 @@
 # :computer: Laptop-AMD-Hackintosh
-
+Relase very soon!
 
 # Specific
 

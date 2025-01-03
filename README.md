@@ -1,7 +1,7 @@
 # :computer: Laptop-AMD-Hackintosh
-Release very soon!
 
-![MacOS Sonoma](https://github.com/Francesco010780/Laptop-AMD-Hackintosh/blob/0de63a27c629754d8c1e4e722f402f028b826d0d/Images/MacOS%20Sonoma.jpg)
+
+![MacOS Sequoia](https://github.com/Francesco010780/Laptop-AMD-Hackintosh/blob/main/Images/MacOS%20Sequoia.png?raw=true)
 
 
 # 	:information_source: Specific

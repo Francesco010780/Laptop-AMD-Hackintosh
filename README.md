@@ -25,7 +25,8 @@ Release very soon!
 * macOS Monterey 12.x
 * macOS Ventura 13.x
 * macOS Sonoma 14.x
-* OpenCore r0.9.7
+* macOS Sequoia 15.x
+* OpenCore r1.0.3
 
 # :gear: BIOS Settings
 
@@ -42,8 +43,8 @@ Release very soon!
 - [x] USB-C Port
 - [x] Battery Status
 - [x] Night Shift
+- [x] - [ ] Hibernation
 - [x] iCloud & App Store
 
 # :x: Not Working
-- [ ] Hibernation
 - [ ] WiFi (Incompatible card)

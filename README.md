@@ -1,9 +1,8 @@
 # :computer: Laptop-AMD-Hackintosh
 Release very soon!
 
-
-![MacOS Ventura](https://github.com/Francesco010780/Laptop-AMD-Hackintosh/blob/0de63a27c629754d8c1e4e722f402f028b826d0d/Images/MacOS%20Ventura.jpg)
 ![MacOS Sonoma](https://github.com/Francesco010780/Laptop-AMD-Hackintosh/blob/0de63a27c629754d8c1e4e722f402f028b826d0d/Images/MacOS%20Sonoma.jpg)
+
 
 # Specific
 
@@ -17,6 +16,62 @@ Release very soon!
 | Ethernet  | Tethering USB kext            |
 | WiFi / Bluetooth  | Realtek RTL8821CE        |
 | BIOS      | HP Laptop Bios          |
+
+# ACPI
+We will use [SSDTTime](https://github.com/corpnewt/SSDTTime) to create ACPIs
+
+After extracting the archive, Windows users should run SSDTTime.bat
+Linux users will have to open their terminal inside the extracted SSDTTime/SSDTTime-master directory then run python3 SSDTTime.py. Make sure you have Python 3 installed.
+Upon launching the tool, it will automatically download iASL, which (de)compiles ACPI tables.
+
+Select option P on the target system to dump the ACPI tables needed for SSDTTime’s operations.
+If you’re not running SSDTTime on the target system, select D instead to pick the folder with the ACPI tables dumped from that target machine
+
+Must choose the option below:
+- [x] USBX, Choose the default option (B key).
+
+- [x] RTCAWAC, If it says you don’t need it, skip this SSDT.
+
+- [x] PluginType, and USB Reset.
+
+- [x] FakeEC Laptop,
+- [x] XOSI, Choose default (A key)
+
+The Results folder will look similar to the below after you’re done.
+Now, copy all the files that start with SSDT and end in .aml inside of the root of the Results folder to Drive/EFI/OC/ACPI.
+
+Finally, merge patches_OC.plist by using the PatchMerge script included with SSDTTime. Run it the same way as SSDTTime.
+
+Press 1 to select the Config.plist created in an earlier step, then drag and drop your Config.plist onto the window, and press enter.
+
+Afterwards, press 2 to start the merging process.
+
+The modified Config.plist with the patches merged in will appear in the Results folder.
+
+Check that it’s okay, then replace your original Config.plist with the newly generated one.
+
+# Kexts
+- AMDRyzenCPUPowerManagement
+- AppleALC
+- AppleMCEReporterDisabler
+- BlueToolFixup
+- BrightnessKeys
+- ECEnabler
+- ForgedInvariant
+- HoRNDIS
+- Lilu
+- NootedRed
+- NullEthernet
+- NVMeFix
+- RestrictEvents
+- SMCAMDProcessor
+- SMCBatteryManager
+- SMCLightSensor
+- SMCRadeonSensors
+- VirtualSMC
+- VoodooI2C
+- VoodooI2CHID
+- VoodooPS2Controller
 
 # :repeat: Supported macOS & OpenCore Versions
 
@@ -49,3 +104,4 @@ Release very soon!
 # :x: Not Working
 - [ ] WiFi (Incompatible card)
 - [ ] Memoji
+- [ ] Animated Wallpapers

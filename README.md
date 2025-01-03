@@ -105,3 +105,9 @@ Check that it’s okay, then replace your original Config.plist with the newly g
 - [ ] WiFi (Incompatible card)
 - [ ] Memoji
 - [ ] Animated Wallpapers
+
+# 	:sparkles: Boot GUI
+Modern (GoldenGate)
+
+![GUI](https://dortania.github.io/OpenCore-Post-Install/assets/img/gui-nouveau.8ad4a7b4.png)
+Font: [Dortania](https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html#setting-up-opencore-s-gui) for GUI

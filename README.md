@@ -25,7 +25,7 @@ Release very soon!
 * macOS Monterey 12.x
 * macOS Ventura 13.x
 * macOS Sonoma 14.x
-* macOS Sequoia 15.x
+* macOS Sequoia 15.x (Having problems currently)
 * OpenCore r1.0.3
 
 # :gear: BIOS Settings
@@ -48,3 +48,4 @@ Release very soon!
 
 # :x: Not Working
 - [ ] WiFi (Incompatible card)
+- [ ] Memoji

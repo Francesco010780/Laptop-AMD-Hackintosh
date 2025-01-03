@@ -43,7 +43,7 @@ Release very soon!
 - [x] USB-C Port
 - [x] Battery Status
 - [x] Night Shift
-- [x] - [ ] Hibernation
+- [x] Hibernation
 - [x] iCloud & App Store
 
 # :x: Not Working

@@ -4,7 +4,7 @@ Release very soon!
 ![MacOS Sonoma](https://github.com/Francesco010780/Laptop-AMD-Hackintosh/blob/0de63a27c629754d8c1e4e722f402f028b826d0d/Images/MacOS%20Sonoma.jpg)
 
 
-# Specific
+# 	:information_source: Specific
 
 | Name      | Description                   |
 | --------- | -----------                   |
@@ -17,7 +17,7 @@ Release very soon!
 | WiFi / Bluetooth  | Realtek RTL8821CE        |
 | BIOS      | HP Laptop Bios          |
 
-# ACPI
+# :zap: ACPI
 We will use [SSDTTime](https://github.com/corpnewt/SSDTTime) to create ACPIs
 
 After extracting the archive, Windows users should run SSDTTime.bat
@@ -50,7 +50,7 @@ The modified Config.plist with the patches merged in will appear in the Results 
 
 Check that it’s okay, then replace your original Config.plist with the newly generated one.
 
-# Kexts
+# 	:toolbox: Kexts
 - AMDRyzenCPUPowerManagement
 - AppleALC
 - AppleMCEReporterDisabler
